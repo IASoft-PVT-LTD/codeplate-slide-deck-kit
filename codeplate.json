@@ -1,0 +1,44 @@
+{
+  "$schema": "https://codeplate.io/schema/codeplate-0.json",
+  "spec": 0,
+  "id": "slide-deck-kit",
+  "name": "Slide Deck Kit",
+  "version": "1.1.1",
+  "kind": "document",
+  "summary": "Branded slide decks written in Markdown (Marp): pitch and lesson samples, charts, PDF/PPTX/PNG export, and checks for overflow and contrast.",
+  "tags": [
+    "slides",
+    "presentation",
+    "marp",
+    "markdown",
+    "pitch-deck",
+    "teaching",
+    "pdf",
+    "pptx"
+  ],
+  "stack": [
+    {
+      "name": "marp-cli",
+      "version": "4.5.1"
+    },
+    {
+      "name": "node",
+      "version": "22"
+    }
+  ],
+  "checks": {
+    "command": "npm ci && npm run check",
+    "requires": [
+      "node",
+      "browser"
+    ],
+    "budget": 90
+  },
+  "license": "CodePlate-Free-1.2",
+  "tier": "free",
+  "media": [
+    "docs/media/pitch-title.png",
+    "docs/media/pitch-chart.png",
+    "docs/media/lesson-columns.png"
+  ]
+}

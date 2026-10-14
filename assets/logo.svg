@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <!-- Placeholder mark for the sample company "Loamly": a sprout from a hand-tool handle. Drawn for CodePlate. -->
+  <circle cx="80" cy="80" r="76" fill="#e76f51"/>
+  <rect x="72" y="70" width="16" height="70" rx="8" fill="#fbf8f3"/>
+  <path d="M80 74 C 80 50, 62 34, 36 34 C 36 58, 54 74, 80 74 Z" fill="#fbf8f3"/>
+  <path d="M80 66 C 80 44, 98 28, 124 28 C 124 52, 106 66, 80 66 Z" fill="#1d3557"/>
+</svg>
