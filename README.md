@@ -1,6 +1,6 @@
 # Slide Deck Kit
 
-> **Free CodePlate template, v1.1.3.** This repository mirrors the zip on [codeplate.io](https://codeplate.io/t/slide-deck-kit/).
+> **Free CodePlate template, v1.1.4.** This repository mirrors the zip on [codeplate.io](https://codeplate.io/t/slide-deck-kit/).
 > Press **Use this template** to start your own repository from it, or [download the zip](https://codeplate.io/t/slide-deck-kit/).
 > [All templates](https://codeplate.io/) · [Free License](https://codeplate.io/license/free/) · subscribers get it under the [Pro License](https://codeplate.io/license/pro/) with no credit.
 
@@ -48,6 +48,10 @@ npm run contrast                # do the theme's colours pass? (and a shade that
 npm run remove-sample           # what removing the sample decks would delete (-- --yes to do it)
 npm run present                 # present from a browser at http://localhost:8080
 ```
+
+## How this template was made
+
+This template was written largely by AI coding agents (Claude, by Anthropic). IASoft reviewed and tested the work. The template's checks run on every change. To test it, a fresh agent was given a made-up project and a set of change requests to carry out with the template. The record of that run is at [codeplate.io/t/slide-deck-kit/eval/](https://codeplate.io/t/slide-deck-kit/eval/).
 
 ## License
 
