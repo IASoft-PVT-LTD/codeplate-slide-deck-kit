@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 720">
+  <!-- A street of houses at dusk. Drawn for CodePlate. -->
+  <rect width="512" height="720" fill="#1d3557"/>
+  <circle cx="390" cy="140" r="54" fill="#e9c46a"/>
+  <g fill="#f1e3d3">
+    <path d="M20 420 L110 340 L200 420 Z"/><rect x="36" y="420" width="148" height="300"/>
+    <path d="M200 380 L300 290 L400 380 Z"/><rect x="216" y="380" width="168" height="340"/>
+    <path d="M380 450 L450 390 L520 450 Z"/><rect x="396" y="450" width="130" height="270"/>
+  </g>
+  <g fill="#e76f51">
+    <rect x="70" y="470" width="36" height="44"/><rect x="120" y="470" width="36" height="44"/>
+    <rect x="250" y="430" width="40" height="50"/><rect x="310" y="430" width="40" height="50"/>
+    <rect x="280" y="560" width="44" height="160"/>
+    <rect x="420" y="500" width="34" height="40"/>
+  </g>
+  <rect x="0" y="690" width="512" height="30" fill="#5b6470"/>
+</svg>

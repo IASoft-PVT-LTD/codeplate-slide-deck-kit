@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 720">
+  <!-- The water cycle: sun, sea, rising vapour, a cloud and rain on a hill. No words, so it works in any language. Drawn for CodePlate. -->
+  <rect width="512" height="720" fill="#dceef5"/>
+  <circle cx="420" cy="100" r="56" fill="#e9c46a"/>
+  <path d="M60 170 C 60 130, 110 110, 140 130 C 160 90, 240 90, 250 140 C 290 130, 320 160, 300 190 L 70 190 C 50 190, 45 175, 60 170 Z" fill="#ffffff"/>
+  <g stroke="#1d3557" stroke-width="6" stroke-linecap="round">
+    <line x1="100" y1="215" x2="88" y2="250"/><line x1="150" y1="215" x2="138" y2="250"/><line x1="200" y1="215" x2="188" y2="250"/><line x1="250" y1="215" x2="238" y2="250"/>
+    <line x1="120" y1="275" x2="108" y2="310"/><line x1="175" y1="275" x2="163" y2="310"/><line x1="225" y1="275" x2="213" y2="310"/>
+  </g>
+  <path d="M0 470 C 80 380, 200 360, 300 470 L 300 720 L 0 720 Z" fill="#2a9d8f"/>
+  <path d="M260 520 C 330 500, 420 510, 512 500 L 512 720 L 230 720 Z" fill="#457b9d"/>
+  <g fill="none" stroke="#e76f51" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 16">
+    <path d="M380 480 C 360 400, 400 320, 360 240"/><path d="M440 480 C 420 400, 460 320, 420 240"/>
+  </g>
+  <path d="M352 252 L360 228 L372 250" fill="none" stroke="#e76f51" stroke-width="6" stroke-linecap="round"/>
+  <path d="M412 252 L420 228 L432 250" fill="none" stroke="#e76f51" stroke-width="6" stroke-linecap="round"/>
+  <path d="M150 420 C 190 470, 230 500, 280 520" fill="none" stroke="#1d3557" stroke-width="6" stroke-dasharray="14 10"/>
+</svg>

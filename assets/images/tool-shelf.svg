@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 720">
+  <!-- A neighbourhood tool shelf: drill, saw, ladder, watering can. Drawn for CodePlate. -->
+  <rect width="512" height="720" fill="#f1e3d3"/>
+  <rect x="40" y="250" width="432" height="16" rx="4" fill="#1d3557"/>
+  <rect x="40" y="470" width="432" height="16" rx="4" fill="#1d3557"/>
+  <rect x="60" y="266" width="12" height="400" fill="#1d3557"/>
+  <rect x="440" y="266" width="12" height="400" fill="#1d3557"/>
+  <!-- drill -->
+  <rect x="90" y="160" width="120" height="56" rx="18" fill="#e76f51"/>
+  <rect x="210" y="178" width="44" height="18" rx="6" fill="#5b6470"/>
+  <rect x="120" y="210" width="40" height="40" rx="8" fill="#c4553a"/>
+  <!-- saw -->
+  <path d="M290 150 L430 150 L430 214 L290 236 Z" fill="#c9ced6"/>
+  <path d="M290 236 L300 228 L310 236 L320 228 L330 236 L340 226 L350 234 L360 224 L370 232 L380 222 L390 230 L400 220 L410 228 L420 218 L430 214 L430 214 L290 236 Z" fill="#9aa3ae"/>
+  <rect x="260" y="140" width="40" height="60" rx="12" fill="#1d3557"/>
+  <!-- watering can -->
+  <rect x="100" y="380" width="120" height="90" rx="14" fill="#2a9d8f"/>
+  <path d="M220 400 L290 360 L298 372 L230 420 Z" fill="#2a9d8f"/>
+  <path d="M120 380 C 120 340, 200 340, 200 380" fill="none" stroke="#2a9d8f" stroke-width="12"/>
+  <!-- ladder -->
+  <rect x="330" y="300" width="12" height="170" fill="#e9c46a"/>
+  <rect x="400" y="300" width="12" height="170" fill="#e9c46a"/>
+  <g fill="#e9c46a"><rect x="330" y="330" width="82" height="10"/><rect x="330" y="375" width="82" height="10"/><rect x="330" y="420" width="82" height="10"/></g>
+  <!-- boxes -->
+  <rect x="90" y="560" width="150" height="106" rx="6" fill="#d4a373"/>
+  <rect x="260" y="590" width="160" height="76" rx="6" fill="#c08552"/>
+  <rect x="140" y="600" width="50" height="10" rx="5" fill="#fbf8f3"/>
+</svg>

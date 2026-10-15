@@ -1,0 +1,38 @@
+{
+  "decks": [
+    {
+      "file": "decks/pitch.md",
+      "about": "Seed-round pitch for Loamly (sample company), 10 minutes",
+      "maxWords": 40,
+      "requireNotes": true,
+      "outline": [
+        "Loamly",
+        "Every street owns forty drills",
+        "Loamly is a tool library for one street",
+        "How it works",
+        "1,240",
+        "Members are growing every month",
+        "How we make money",
+        "What members say",
+        "The ask: £400k seed",
+        "Thank you"
+      ]
+    },
+    {
+      "file": "decks/lesson.md",
+      "about": "Year 4 science lesson on the water cycle (sample), 40 minutes",
+      "maxWords": 30,
+      "requireNotes": false,
+      "outline": [
+        "The water cycle",
+        "Today we will",
+        "Part 1",
+        "Evaporation",
+        "Condensation and precipitation",
+        "Rain in our town this year",
+        "Quick quiz",
+        "Well done!"
+      ]
+    }
+  ]
+}

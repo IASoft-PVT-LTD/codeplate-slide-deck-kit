@@ -1,0 +1,30 @@
+{
+  "name": "slide-deck-kit",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node src/cli.mjs build",
+    "preview": "node src/cli.mjs preview",
+    "watch": "node src/cli.mjs watch",
+    "charts": "node src/cli.mjs charts",
+    "lint": "node src/cli.mjs lint",
+    "browser": "node src/cli.mjs browser",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "check": "node checks/run.mjs",
+    "present": "node src/cli.mjs present",
+    "handout": "node src/cli.mjs handout",
+    "contrast": "node src/cli.mjs contrast",
+    "remove-sample": "node src/cli.mjs remove-sample"
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "4.5.1",
+    "puppeteer-core": "24.43.1"
+  },
+  "overrides": {
+    "basic-ftp": "6.2.3"
+  }
+}

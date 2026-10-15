@@ -1,0 +1,173 @@
+/* @theme brand */
+/* @size 16:9 1280px 720px */
+/* @size 4:3 960px 720px */
+/*
+ * The deck's look: one Marp theme, used by every deck (front matter `theme: brand`).
+ * Change the brand in the variables block below; the layouts further down use only
+ * these variables, so a rebrand is an edit here (docs/recipes/rebrand.md).
+ *
+ * Slides are 1280 x 720 (16:9), or 960 x 720 for a deck with `size: 4:3` in its front
+ * matter (the size is per deck: docs/recipes/slide-size.md). The checks fail any slide
+ * whose content runs off the slide, any text smaller than 18px, and any text without
+ * enough contrast, so keep sizes and colours inside those rules when you change them.
+ * `npm run contrast` measures the colour pairs in the variables block below.
+ *
+ * Layouts (pick one per slide with <!-- _class: name -->):
+ *   (none)    a title and content: bullets, a short paragraph, an image or a chart
+ *   title     the opening slide: big title, subtitle, presenter line
+ *   section   a divider between parts of the talk
+ *   stat      one big number and what it means
+ *   quote     a quotation with its source
+ *   columns   a title and two columns: <div class="cols"><div>…</div><div>…</div></div>
+ *             (leave a blank line after each <div> so the Markdown inside is read)
+ *   end       the closing slide: thank-you line and contact details
+ * Images: ![bg right:40%](../assets/images/x.svg) puts a picture on the right 40%.
+ * Charts: a ```chart fence (src/charts.mjs) draws a bar or line chart in the theme colours.
+ */
+
+@font-face { font-family: 'Inter'; font-weight: 400; font-style: normal; src: url('../assets/fonts/Inter-Regular.ttf'); }
+@font-face { font-family: 'Inter'; font-weight: 400; font-style: italic; src: url('../assets/fonts/Inter-Italic.ttf'); }
+@font-face { font-family: 'Inter'; font-weight: 600; font-style: normal; src: url('../assets/fonts/Inter-SemiBold.ttf'); }
+@font-face { font-family: 'Inter'; font-weight: 700; font-style: normal; src: url('../assets/fonts/Inter-Bold.ttf'); }
+@font-face { font-family: 'DM Serif Display'; font-weight: 400; font-style: normal; src: url('../assets/fonts/DMSerifDisplay-Regular.ttf'); }
+
+section {
+  /* ---- Brand: change these ---- */
+  --brand: #1d3557;        /* main colour: title and section slides, headings */
+  --accent: #d95f3f;       /* highlights: rules under titles, quote bar, highlighted chart bar */
+  --accent-text: var(--accent); /* the accent as text on --paper: big numbers, bullets. A light
+                              brand colour (yellow, light orange) fails contrast there: set a
+                              darker shade of it here (`npm run contrast` suggests one) */
+  --ink: #1b1f24;          /* body text */
+  --muted: #5b6470;        /* captions, footer, page numbers */
+  --paper: #fbf8f3;        /* slide background */
+  --on-brand: #ffffff;     /* text on the brand colour */
+  --on-brand-muted: #c9d3e0; /* footer and page number on the brand colour */
+  --logo-backing: transparent; /* a badge behind a logo on title, section and end slides:
+                              set it (e.g. var(--paper)) when the logo has marks in the
+                              brand colour that vanish on it; the inspect check says so */
+  --heading-font: 'DM Serif Display', serif;
+  --body-font: 'Inter', sans-serif;
+  /* ----------------------------- */
+
+  width: 1280px;
+  height: 720px;
+  box-sizing: border-box;
+  padding: 64px 80px 72px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body-font);
+  font-size: 28px;
+  line-height: 1.45;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  font-weight: 400;
+  color: var(--brand);
+  line-height: 1.1;
+  margin: 0 0 28px;
+}
+h1 { font-size: 64px; }
+h2 { font-size: 48px; }
+h3 { font-size: 34px; margin-bottom: 16px; }
+
+p, ul, ol { margin: 0 0 20px; }
+ul, ol { padding-left: 1.1em; }
+li { margin: 6px 0; }
+li::marker { color: var(--accent-text); }
+strong { font-weight: 700; }
+em { font-style: italic; }
+a { color: var(--brand); text-decoration-color: var(--accent); }
+code { font-size: 0.85em; background: rgba(0, 0, 0, 0.06); padding: 0 6px; border-radius: 4px; }
+img { max-height: 100%; }
+p > img:only-child { display: block; margin: 0 auto; max-height: 470px; }
+
+table { border-collapse: collapse; font-size: 24px; }
+th { text-align: left; color: var(--brand); border-bottom: 3px solid var(--accent); padding: 8px 20px 8px 0; }
+td { border-bottom: 1px solid rgba(0, 0, 0, 0.12); padding: 8px 20px 8px 0; }
+
+/* Footer and page number (front matter: paginate: true, footer: '…'). */
+footer, section::after { position: absolute; padding: 0; font-size: 18px; line-height: 1; color: var(--muted); }
+footer { left: 80px; bottom: 28px; }
+section::after { content: attr(data-marpit-pagination); right: 80px; bottom: 28px; }
+
+/* ---- Layouts ---- */
+
+section.title, section.section, section.end {
+  background: var(--brand);
+  color: var(--on-brand);
+  justify-content: center;
+}
+section.title h1, section.section h1, section.section h2, section.end h1 { color: var(--on-brand); }
+section.title footer, section.title::after, section.section footer, section.section::after,
+section.end footer, section.end::after { color: var(--on-brand-muted); }
+section.title h1 { font-size: 80px; margin-bottom: 24px; }
+section.title p { font-size: 30px; margin: 0; }
+section.title p > img:only-child { margin: 0 0 32px; }
+/* The logo badge: a backing drawn around the logo (a shadow, so the logo stays aligned with
+   the title whether the backing is set or transparent). */
+section.title p > img, section.section p > img, section.end p > img {
+  background: var(--logo-backing);
+  box-shadow: 0 0 0 18px var(--logo-backing);
+  border-radius: 6px;
+}
+section.title p + p { margin-top: 40px; font-size: 22px; }
+section.title h1::after, section.section h1::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 8px;
+  margin-top: 28px;
+  background: var(--accent);
+}
+
+section.section h1 { font-size: 72px; }
+section.section p { font-size: 28px; }
+
+section.stat { justify-content: center; }
+section.stat h1 { font-family: var(--heading-font); font-size: 160px; color: var(--accent-text); margin: 0; }
+section.stat h2 { font-size: 40px; margin: 8px 0 16px; }
+section.stat p { color: var(--muted); font-size: 24px; }
+
+section.quote { justify-content: center; }
+section.quote blockquote {
+  margin: 0;
+  padding-left: 36px;
+  border-left: 8px solid var(--accent);
+  font-family: var(--heading-font);
+  font-size: 48px;
+  line-height: 1.25;
+  color: var(--brand);
+}
+section.quote blockquote + p { margin-top: 28px; color: var(--muted); font-size: 24px; }
+
+section.columns .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+section.columns .cols > div { display: block; }
+
+section.end { align-items: flex-start; }
+section.end h1 { font-size: 72px; }
+section.end p { font-size: 28px; margin: 0 0 8px; }
+
+/* Small print under a chart or picture: the source of a number. */
+.caption, section p.caption { font-size: 20px; color: var(--muted); }
+section p.chart-caption { margin-top: 16px; } /* a chart's caption: line */
+
+/* Charts drawn by src/charts.mjs from a ```chart fence. */
+.chart { width: 100%; height: auto; display: block; overflow: visible; font-family: var(--body-font); }
+.chart .bar { fill: var(--brand); }
+.chart .bar.hi, .chart .line-dot.hi { fill: var(--accent); }
+.chart .line { fill: none; stroke: var(--brand); stroke-width: 5; stroke-linejoin: round; stroke-linecap: round; }
+.chart .line-dot { fill: var(--brand); }
+.chart .axis { stroke: var(--muted); stroke-width: 2; }
+.chart .grid { stroke: rgba(0, 0, 0, 0.08); stroke-width: 1; }
+.chart .label { fill: var(--muted); font-size: 20px; }
+.chart .value { fill: var(--ink); font-size: 22px; font-weight: 600; }
+/* A 4:3 slide is narrower, so the chart (drawn 1120 wide, scaled to the content width) shrinks:
+   larger chart text keeps it at 18px or more on the slide. */
+section[data-size="4:3"] .chart .label { font-size: 26px; }
+section[data-size="4:3"] .chart .value { font-size: 28px; }
