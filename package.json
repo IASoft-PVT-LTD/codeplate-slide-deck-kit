@@ -25,6 +25,7 @@
     "puppeteer-core": "24.43.1"
   },
   "overrides": {
-    "basic-ftp": "6.2.3"
+    "basic-ftp": "6.2.3",
+    "katex": "0.18.2"
   }
 }

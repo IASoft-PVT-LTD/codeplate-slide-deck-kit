@@ -3,7 +3,7 @@
   "spec": 0,
   "id": "slide-deck-kit",
   "name": "Slide Deck Kit",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "kind": "document",
   "summary": "Branded slide decks written in Markdown (Marp): pitch and lesson samples, charts, PDF/PPTX/PNG export, and checks for overflow and contrast.",
   "tags": [
