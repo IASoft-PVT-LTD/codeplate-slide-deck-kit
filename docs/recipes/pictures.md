@@ -8,7 +8,7 @@ Use this when a slide needs an image: the user's product screenshot, a team phot
 
 2. **Prepare the file.** Put it in `assets/images/` with a short lowercase name (`team-photo.jpg`). Keep files reasonable: photos about 1600 px on the long side as JPEG (under 1 MB), screenshots as PNG, diagrams as SVG without text in them (an SVG used as a picture can't use the deck's fonts: put the words on the slide instead).
 
-3. **List it** in `assets.json`: `path`, `kind: "image"`, `width`/`height` for PNG and SVG (pixels, or the SVG's viewBox; the `assets` check compares them), `use` (which slide), `license` (`CodePlate-original` for the user's own, `CC0-1.0` for CC0), `credit`, `source` (a link for CC0). Add a line to `CREDITS.md`.
+3. **List it** in `assets.json`: `path`, `kind: "image"`, `width`/`height` for PNG and SVG (pixels, or the SVG's viewBox; the `assets` check compares them), `use` (which slide), `license` and `credit` (files the user gave you: `"license": "user-owned"` with their name or organisation; CC0: `CC0-1.0`, the artist, and `source`, a link; `CodePlate-original` only for the files that came with the kit, credited "CodePlate"). Add a line to `CREDITS.md`.
 
 4. **Place it** with Marp's picture syntax; words after the keywords are the alt text (required):
    - beside the text, on the right 40%: `![bg right:40% Our team at the 2026 launch](../assets/images/team-photo.jpg)` (or `left`, other percentages);

@@ -1,6 +1,6 @@
 # Slide Deck Kit
 
-> **Free CodePlate template, v1.1.4.** This repository mirrors the zip on [codeplate.io](https://codeplate.io/t/slide-deck-kit/).
+> **Free CodePlate template, v1.1.5.** This repository mirrors the zip on [codeplate.io](https://codeplate.io/t/slide-deck-kit/).
 > Press **Use this template** to start your own repository from it, or [download the zip](https://codeplate.io/t/slide-deck-kit/).
 > [All templates](https://codeplate.io/) · [Free License](https://codeplate.io/license/free/) · subscribers get it under the [Pro License](https://codeplate.io/license/pro/) with no credit.
 

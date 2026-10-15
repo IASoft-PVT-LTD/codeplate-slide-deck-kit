@@ -19,7 +19,7 @@ Use this when the user's brand replaces the sample's (Loamly's navy and coral), 
    - if the accent fails as a graphic too, darken `--accent` the same way.
    Tell the user what you changed and why ("your mustard is too pale to read on the cream background, so numbers use a darker mustard; rules and bars keep the bright one"). The `inspect` check measures the text on every slide either way.
 
-4. **Logo.** Put their file in `assets/` (SVG best; PNG at least 600 px wide), list it in `assets.json` (size: an SVG's viewBox, a PNG's pixels; `license: "CodePlate-original"`, `credit`: their organisation) and `CREDITS.md`, and use it on the title slide: `![w:120 <Their name> logo](../assets/<file>)`. Remove `assets/logo.svg` and its entry when nothing uses it (`npm run remove-sample` does it while it is still the Loamly logo).
+4. **Logo.** Put their file in `assets/` (SVG best; PNG at least 600 px wide), list it in `assets.json` (size: an SVG's viewBox, a PNG's pixels; `license: "user-owned"`, `credit`: their organisation) and `CREDITS.md`, and use it on the title slide: `![w:120 <Their name> logo](../assets/<file>)`. Remove `assets/logo.svg` and its entry when nothing uses it (`npm run remove-sample` does it while it is still the Loamly logo).
 
 5. **A logo that disappears on the brand colour** (dark marks on a dark title slide): the `inspect` check fails with "N% of it is the colour behind it". Fix it in one of two ways:
    - **a badge:** set `--logo-backing` in the variables block (usually `var(--paper)`, or `#ffffff`); title, section and end slides then draw a rounded badge behind the logo, without moving it;
